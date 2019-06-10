@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Full Stack';
+  myItem = {
+    'id': 1,
+    'name': 'Angel',
+    'surname': 'Banegas',
+    'edad': 23
+  };
 }
