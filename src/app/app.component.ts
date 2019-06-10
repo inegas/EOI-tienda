@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import {
+  Component
+} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +9,26 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Full Stack';
-  myItem = {
-    'id': 1,
-    'name': 'Angel',
-    'surname': 'Banegas',
-    'edad': 23
-  };
+  myItem = [{
+      'type': 'Alumno',
+      'id': 1,
+      'name': 'Angel',
+      'surname': 'Banegas',
+      'edad': 23
+    },
+    {
+      'type': 'Alumno',
+      'id': 2,
+      'name': 'Joselito',
+      'surname': 'Gonzalez',
+      'edad': 25
+    },
+    {
+      'type': 'Alumno',
+      'id': 3,
+      'name': 'Pacolo',
+      'surname': 'Pataton',
+      'edad': 0
+    }
+  ];
 }

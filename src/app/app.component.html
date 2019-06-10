@@ -4,9 +4,18 @@
     Welcome {{ title }}!
   </h1>
 </div>
-    <h2>Mi nombre es: {{ myItem.name }}</h2>
-    <h3>Mi apellido es: {{ myItem.surname }}</h3>
-    <p>Tengo {{ myItem['edad'] }}</p> 
-    <p>Tengo id {{ myItem['id']}}</p>
+<ul *ngFor="let item of myItem">
+  <li>
+    <h2>{{item.type}}</h2>
+    <p>{{item.name}}</p>
+    <p>{{item.surname}}</p>
+    <ng-container *ngIf="item.edad == 0; else elseTemplate">
+      <p>No tiene edad</p>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <p>{{item.edad}}</p>
+    </ng-template>
+  </li>
+</ul>
 
 <router-outlet></router-outlet>
