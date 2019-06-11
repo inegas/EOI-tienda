@@ -4,8 +4,8 @@
 </section>
 <ul *ngFor="let item of myItem">
   <li>
-    <h2>{{item.type}}</h2>
-    <p>{{item.name | uppercase}}</p>
+   
+    <h2>{{item.name | uppercase}}</h2>
     <p>{{item.description}}</p>
     <p>{{item.price | currency:'EUR'}}</p>
     <p>Total precio stock: {{ item.price | store:item.stock | currency:'EUR' }}</p>
