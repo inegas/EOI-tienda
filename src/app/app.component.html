@@ -7,8 +7,9 @@
 <ul *ngFor="let item of myItem">
   <li>
     <h2>{{item.type}}</h2>
-    <p>{{item.name}}</p>
+    <p>{{item.name | uppercase}}</p>
     <p>{{item.surname}}</p>
+    <p>{{item.price | currency:'EUR'}}</p>
     <ng-container *ngIf="item.edad == 0; else elseTemplate">
       <p>No tiene edad</p>
     </ng-container>
@@ -17,5 +18,8 @@
     </ng-template>
   </li>
 </ul>
-
+<pre>
+  {{myItem | json}}
+</pre>
+<p>Hay tantos {{ totalItem() }}</p>
 <router-outlet></router-outlet>
