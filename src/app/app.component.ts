@@ -1,7 +1,4 @@
-import {
-  Component
-} from '@angular/core';
-import { filterQueryId } from '@angular/core/src/view/util';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -11,41 +8,36 @@ import { filterQueryId } from '@angular/core/src/view/util';
 export class AppComponent {
   title = 'Full Stack';
   myItem = [{
-      'type': 'Alumno',
+      'type': 'Item 1',
       'id': 1,
-      'name': 'Angel',
-      'surname': 'Banegas',
+      'name': 'Name',
+      'description': 'Short description',
       'edad': 23,
       'price': 14.99,
       'stock': 4
     },
     {
-      'type': 'Alumno',
+      'type': 'Item 2',
       'id': 2,
-      'name': 'Joselito',
-      'surname': 'Gonzalez',
+      'name': 'Name',
+      'description': 'Short description',
       'edad': 25,
       'price': 5,
       'stock': 8
     },
     {
-      'type': 'Alumno',
+      'type': 'Item 3',
       'id': 3,
-      'name': 'Pacolo',
-      'surname': 'Pataton',
+      'name': 'Name',
+      'description': 'Short description',
       'edad': 0,
-      'price': 3.54,
+      'price': 7.54,
       'stock': 10
     }
   ];
-  
-totalItem(){
-  
-  let result2 = this.myItem.reduce( (a , b) =>  a + b.stock, 0 );
-  return result2;
-  
-}
 
-
-}
- 
+  totalItem() {
+    let result2 = this.myItem.reduce((a, b) => a + b.stock, 0);
+    return result2;
+  };
+};
