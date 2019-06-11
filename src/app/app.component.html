@@ -1,30 +1,4 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome {{ title }}!
-  </h1>
-  <p>Hay {{ totalItem() }} en stock total</p>
-  <p>Suma una unidad en stock de todos los articulos: {{myItem | total:'price'}}</p>
-
-</div>
-<ul *ngFor="let item of myItem">
-  <li>
-    <h2>{{item.type}}</h2>
-    <p>{{item.name | uppercase}}</p>
-    <p>{{item.description}}</p>
-    <p>{{item.price | currency:'EUR'}}</p>
-    <p>Total precio stock: {{ item.price | store:item.stock | currency:'EUR' }}</p>
-    <ng-container *ngIf="item.stock == 0; else elseTemplate">
-      <p>Stock no disponible</p>
-    </ng-container>
-    <ng-template #elseTemplate>
-      <p>Stock actual: {{item.stock}}</p>
-    </ng-template>
-  </li>
-</ul>
-<!-- <pre>
-  {{myItem | json}}
-</pre> -->
-
-
+<div style="text-align:center"><h1>Welcome {{ title }}!</h1></div>
+<app-item-list></app-item-list>
 <router-outlet></router-outlet>
