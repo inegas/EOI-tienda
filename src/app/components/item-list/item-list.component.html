@@ -3,17 +3,18 @@
 <p>Suma una unidad en stock de todos los articulos: {{items | total:'price'}}</p>
 </section>
 <ul *ngFor="let item of items">
-  <li>
-   
-    <h2>{{item.name | uppercase}}</h2>
+  <li class="card">
+    <img src="#" alt="Denim Jeans">
+    <h1>{{item.name | uppercase}}</h1>
     <p>{{item.description}}</p>
-    <p>{{item.price | currency:'EUR'}}</p>
-    <p>Total precio stock: {{ item.price | store:item.stock | currency:'EUR' }}</p>
+    <p class="price">{{item.price | currency:'EUR'}}</p>
+    <!-- <p>Total precio stock: {{ item.price | store:item.stock | currency:'EUR' }}</p> -->
     <ng-container *ngIf="item.stock == 0; else elseTemplate">
       <p>Stock no disponible</p>
     </ng-container>
     <ng-template #elseTemplate>
       <p>Stock actual: {{item.stock}}</p>
     </ng-template>
+    <p><button>Add to Cart</button></p>
   </li>
 </ul>

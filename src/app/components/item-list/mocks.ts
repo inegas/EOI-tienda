@@ -21,5 +21,54 @@ import { Item } from '../../entities/item.model';
       'description': 'Short description',
       'price': 7.54,
       'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
+    },
+    {
+      'id': 3,
+      'name': 'Name',
+      'description': 'Short description',
+      'price': 7.54,
+      'stock': 10
     }
   ];
