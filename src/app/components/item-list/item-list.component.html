@@ -1,8 +1,8 @@
 <section style="text-align:center">
 <p>Hay {{ totalItem() }} en stock total</p>
-<p>Suma una unidad en stock de todos los articulos: {{myItem | total:'price'}}</p>
+<p>Suma una unidad en stock de todos los articulos: {{items | total:'price'}}</p>
 </section>
-<ul *ngFor="let item of myItem">
+<ul *ngFor="let item of items">
   <li>
    
     <h2>{{item.name | uppercase}}</h2>

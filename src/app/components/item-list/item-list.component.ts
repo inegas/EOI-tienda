@@ -1,40 +1,25 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ITEMS } from './mocks';
+import { Item } from '../../entities/item.model';
 
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
   styleUrls: ['./item-list.component.scss']
 })
-export class ItemListComponent {
+export class ItemListComponent implements OnInit {
+  title = 'Full Stack';
+  items: Item[];
 
-title = 'Full Stack';
-myItem = [{
-  
-      'id': 1,
-      'name': 'Name',
-      'description': 'Short description',
-      'price': 14.99,
-      'stock': 4
-    },
-    {
-      'id': 2,
-      'name': 'Name',
-      'description': 'Short description',
-      'price': 5,
-      'stock': 8
-    },
-    {
-      'id': 3,
-      'name': 'Name',
-      'description': 'Short description',
-      'price': 7.54,
-      'stock': 10
-    }
-  ];
+  constructor(){}
+
+  ngOnInit() {
+    this.items = ITEMS;
+  }
 
   totalItem() {
-    let result2 = this.myItem.reduce((a, b) => a + b.stock, 0);
+    let result2 = this.items.reduce((a, b) => a + b.stock, 0);
     return result2;
   };
-  
+
 };
