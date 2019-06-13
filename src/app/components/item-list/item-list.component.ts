@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ITEMS } from './mocks';
 import { Item } from '../../entities/item.model';
+import { ItemListService } from './item-list.service';
 
 
 @Component({
@@ -12,9 +13,11 @@ export class ItemListComponent implements OnInit {
   title = 'Full Stack';
   items: Item[];
 
-  constructor(){}
+  constructor(private itemListService:ItemListService){}
 
   ngOnInit() {
+    this.items = this.itemListService.getItemlist();
+
     this.items = ITEMS;
     this.items.map(item =>{
       item.quantity = null;
