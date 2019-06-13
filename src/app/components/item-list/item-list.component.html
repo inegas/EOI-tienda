@@ -8,7 +8,7 @@
     <p>{{item.description}}</p>
     <p class="price">{{item.price | currency:'EUR'}}</p>
     <button class="btn" [disabled]="item.quantity === 0" (click)="itemMenos(item)">-</button>
-    <input disabled type="number" [value]="item.quantity">
+    <input type="number" [(ngModel)]="item.quantity" (change)="modelChanged(item)">
     <button class="btn" value="+" (click)="itemPlus(item)">+</button>
     <ng-container *ngIf="item.stock == 0; else elseTemplate">
       <p>Stock no disponible</p>

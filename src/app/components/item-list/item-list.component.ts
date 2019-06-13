@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ITEMS } from './mocks';
 import { Item } from '../../entities/item.model';
 
+
 @Component({
   selector: 'app-item-list',
   templateUrl: './item-list.component.html',
@@ -15,6 +16,9 @@ export class ItemListComponent implements OnInit {
 
   ngOnInit() {
     this.items = ITEMS;
+    this.items.map(item =>{
+      item.quantity = null;
+    });
   }
 
   totalItem() {
@@ -34,7 +38,13 @@ export class ItemListComponent implements OnInit {
       item.stock++;
       item.quantity--;
     }
-    
+  };
+
+  modelChanged(item:Item){
+    if(item.stock > 0 ){
+       item.stock -= item.quantity;
+    }else if(item.quantity == null){
+    }
   }
 
 };
