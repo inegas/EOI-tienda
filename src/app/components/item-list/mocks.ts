@@ -6,69 +6,99 @@ import { Item } from '../../entities/item.model';
       'name': 'Name',
       'description': 'Short description',
       'price': 14.99,
-      'stock': 4
+      'stock': 4,
+      'image': 'assets/carl.jpg',
+      'selected': true,
+      'quantity': 0,
     },
     {
       'id': 2,
       'name': 'Name',
       'description': 'Short description',
       'price': 5,
-      'stock': 8
+      'stock': 8,
+      'image': 'assets/sirio-berati.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/sirio.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/sirio3.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/sirio4.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/taisiia.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/zahir.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/carl-ibale-1644145-unsplash.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/carl-ibale-1644145-unsplash.jpg',
+      'selected': false,
+      'quantity': 0,
     },
     {
       'id': 3,
       'name': 'Name',
       'description': 'Short description',
       'price': 7.54,
-      'stock': 10
+      'stock': 10,
+      'image': 'assets/carl-ibale-1644145-unsplash.jpg',
+      'selected': false,
+      'quantity': 0,
     }
   ];

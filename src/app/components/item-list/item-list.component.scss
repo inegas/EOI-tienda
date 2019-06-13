@@ -7,15 +7,23 @@
    /* border: 1px solid blue; */
    width: 20vw;
  }
+
  .card {
    /* border: 1px solid red; */
    list-style: none;
    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+   background-color: whitesmoke;
+   border-radius: 5px;
    width: 20vw;
 
    text-align: center;
    font-family: arial;
  }
+
+.selected{
+    border: 1px solid red;
+
+}
 
  .price {
    color: grey;
@@ -38,3 +46,28 @@
  .card button:hover {
    opacity: 0.7;
  }
+
+ li h1{
+     font-family: 'Permanent Marker', cursive;
+ }
+
+img{
+    width: 15vw;
+    height: 30vh;
+     padding-top: 0.3em;
+    border-radius: 5px;
+}
+
+input{
+    width: 2.5vw;
+}
+.card button.btn{
+    border-radius: 3px;
+    padding: 0;
+    width: 2vw;
+    height: 3.5vh;
+}
+
+/* li.selected{
+    border: 1px solid red;
+} */

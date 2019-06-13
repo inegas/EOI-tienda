@@ -22,4 +22,19 @@ export class ItemListComponent implements OnInit {
     return result2;
   };
 
+  itemPlus(item:Item){
+    if(item.stock > 0){
+       item.quantity++;
+       item.stock--;
+    }
+  };
+  
+  itemMenos(item:Item){
+    if (item.quantity > 0) {
+      item.stock++;
+      item.quantity--;
+    }
+    
+  }
+
 };

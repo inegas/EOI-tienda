@@ -4,11 +4,12 @@
 </section>
 <ul *ngFor="let item of items">
   <li class="card">
-    <img src="#" alt="Denim Jeans">
-    <h1>{{item.name | uppercase}}</h1>
+    <img [src]="item.image" alt="No encontrada">
     <p>{{item.description}}</p>
     <p class="price">{{item.price | currency:'EUR'}}</p>
-    <!-- <p>Total precio stock: {{ item.price | store:item.stock | currency:'EUR' }}</p> -->
+    <button class="btn" [disabled]="item.quantity === 0" (click)="itemMenos(item)">-</button>
+    <input disabled type="number" [value]="item.quantity">
+    <button class="btn" value="+" (click)="itemPlus(item)">+</button>
     <ng-container *ngIf="item.stock == 0; else elseTemplate">
       <p>Stock no disponible</p>
     </ng-container>
