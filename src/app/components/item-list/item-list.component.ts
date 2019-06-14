@@ -59,6 +59,7 @@ export class ItemListComponent implements OnInit {
     }
   };
 
+  //Este metodo es para introducir quantity a pelo.
   modelChanged(item: Item) {
     if (item.stock > 0) {
       item.stock -= item.quantity;
