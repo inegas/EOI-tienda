@@ -1,0 +1,81 @@
+{
+  "item-list": [
+    {
+      "id": 2,
+      "name": "name",
+      "description": "Reloj",
+      "stock": 20,
+      "price": 4.99,
+      "image": "assets/sirio-berati.jpg",
+      "selected": false,
+      "quantity": null,
+      "editable": false
+    },
+    {
+      "id": 3,
+      "name": "name",
+      "description": "Hola cocacola",
+      "stock": 20,
+      "price": 29.99,
+      "image": "assets/sirio.jpg",
+      "selected": false,
+      "quantity": null,
+      "editable": false
+    },
+    {
+      "id": 4,
+      "name": "name",
+      "description": "name description",
+      "stock": 20,
+      "price": 39.99,
+      "image": "assets/sirio3.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editable": false
+    },
+    {
+      "id": 5,
+      "name": "name",
+      "description": "name description",
+      "stock": 20,
+      "price": 49.99,
+      "image": "assets/sirio3.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editable": false
+    },
+    {
+      "id": 6,
+      "name": "name",
+      "description": "name description",
+      "stock": 20,
+      "price": 59.99,
+      "image": "assets/sirio3.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editable": false
+    },
+    {
+      "id": 7,
+      "name": "name",
+      "description": "name description",
+      "stock": 20,
+      "price": 69.99,
+      "image": "assets/sirio3.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editable": false
+    },
+    {
+      "id": 8,
+      "name": "name",
+      "description": "name description",
+      "stock": 20,
+      "price": 79.99,
+      "image": "assets/sirio3.jpg",
+      "selected": false,
+      "quantity": 0,
+      "editable": false
+    }
+  ]
+}

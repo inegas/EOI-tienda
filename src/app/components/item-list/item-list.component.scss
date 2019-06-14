@@ -59,15 +59,22 @@ img{
 }
 
 input{
+ 
     width: 2.5vw;
 }
+
+.description{
+  text-align: center;
+  position: relative;
+  display: flex;
+  margin-top: 1vmax;
+  left: 2vmax;
+  width: 15vw;
+}
+
 .card button.btn{
     border-radius: 3px;
     padding: 0;
     width: 2vw;
     height: 3.5vh;
 }
-
-/* li.selected{
-    border: 1px solid red;
-} */

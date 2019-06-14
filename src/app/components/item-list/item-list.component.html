@@ -1,11 +1,16 @@
 <section style="text-align:center">
-<p>Hay {{ totalItem() }} en stock total</p>
-<p>Suma una unidad en stock de todos los articulos: {{items | total:'price'}}</p>
+  <!-- <p>Hay {{ totalItem() }} en stock total</p> -->
+  <!-- <p>Suma una unidad en stock de todos los articulos: {{items | total:'price'}}</p> -->
+  <button type="text">Add</button>
 </section>
 <ul *ngFor="let item of items">
   <li class="card">
+    <button (click)="deleteItem(item)">X</button>
     <img [src]="item.image" alt="No encontrada">
-    <p>{{item.description}}</p>
+
+    <p *ngIf="!item.editable" (click)="isEditable(item)">{{item.description}}</p>
+    <input *ngIf="item.editable" (keydown.enter)="isNotEditable(item)" [(ngModel)]="item.description" (change)="updateItem(item)" class="description" type="text">
+
     <p class="price">{{item.price | currency:'EUR'}}</p>
     <button class="btn" [disabled]="item.quantity === 0" (click)="itemMenos(item)">-</button>
     <input type="number" [(ngModel)]="item.quantity" (change)="modelChanged(item)">
