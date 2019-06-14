@@ -19,7 +19,8 @@
       <p>Stock no disponible</p>
     </ng-container>
     <ng-template #elseTemplate>
-      <p>Stock actual: {{item.stock}}</p>
+      <p *ngIf="item.quantity !== null">Stock actual: {{item.stock}}</p>
+      <p *ngIf="item.quantity === null">Stock actual: {{item.stockaux}}</p>
     </ng-template>
     <p><button>Add to Cart</button></p>
   </li>

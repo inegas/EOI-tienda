@@ -8,4 +8,5 @@ export class Item {
     selected: boolean;
     quantity: number;
     editable: boolean;
+    stockaux: number;
 };

@@ -62,8 +62,8 @@ export class ItemListComponent implements OnInit {
   modelChanged(item: Item) {
     if (item.stock > 0) {
       item.stock -= item.quantity;
-    } else if (item.quantity == null) {
-      //Aqui va algo
+    } else if (item.quantity === null) {
+       item.stockaux;
     }
   }
 
