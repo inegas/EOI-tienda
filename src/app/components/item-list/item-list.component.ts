@@ -37,13 +37,13 @@ export class ItemListComponent implements OnInit {
       );
   }
 
-  totalItem() {
+ /*  totalItem() {
     let result2:number;
     setTimeout(() => {
        result2 = this.items.reduce((a, b) => a + b.stock, 0);
     }, 500);
     return result2; 
-  }
+  } */
 
   itemPlus(item: Item) {
     if (item.stock > 0) {
