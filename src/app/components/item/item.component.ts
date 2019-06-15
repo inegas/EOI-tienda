@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ItemComponent implements OnInit {
 
+/* Aqui va el outPut() y eventEmmiter */
   constructor() { }
 
   ngOnInit() {
