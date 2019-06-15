@@ -33,8 +33,8 @@ export class ItemListService {
   }
 
   createItem(item:Item){
-    const url = `${this.URL_BASE}/${item.id}`;
-    return this.http.post(url, item, httpOptions);
+    const url = `${this.URL_BASE}/`;
+    return this.http.post<Item>(url, item, httpOptions);
   }
  
 }

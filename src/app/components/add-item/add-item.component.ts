@@ -11,7 +11,7 @@ import { ItemListService } from '../item-list/item-list.service';
 export class AddItemComponent implements OnInit {
 
   //Me traigo la estructura del Item[]
-  item:Item[];
+  items:Item[];
   hidden:boolean = true;
 
   //Atributos para añadir
@@ -22,7 +22,7 @@ export class AddItemComponent implements OnInit {
   addImage:string;
 
 
-  constructor(private ItemListService:ItemListService) { }
+  constructor(private itemListService:ItemListService) { }
 
   ngOnInit() {
   }
@@ -36,15 +36,12 @@ export class AddItemComponent implements OnInit {
   };
 
   newItem(item:Item){
-    this.ItemListService.createItem(item).subscribe(
-    () => {
-    item.description = this.addDescription;
-    item.stock = this.addStock;
-    item.price = this.addPrice;
-    item.image = this.addImage;
+    this.itemListService.createItem(item).subscribe(
+      () =>{
+        item.description = this.addDescription;
       }
-    );
-    
+      
+      
+    )
   };
-
-}
+};
