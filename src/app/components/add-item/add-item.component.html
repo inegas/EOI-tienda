@@ -2,17 +2,17 @@
 <button type="text" (click)="showAdd()">Add</button>
 <form [hidden]="hidden">
   Description:<br>
-  <input type="text" name="Description">
+  <input type="text"  [attr.name]="addDescription">
   <br>
   Stock:<br>
-  <input type="number" name="Stock" value="Stock">
+  <input type="number" name="addStock" value="Stock">
   <br>
   Price:<br>
-  <input type="number" name="Price" value="Price">
+  <input type="number" name="addPrice" value="Price">
   <br>
   Image:<br>
-  <input type="text" name="Image">
+  <input type="text" name="addImage">
   <br>
-  <button>Crear</button>
-  <button (click)="noShowAdd()">Cancelar</button>
+  <button (click)="newItem(item)">Create</button>
+  <button (click)="noShowAdd()">Cancel</button>
 </form> 

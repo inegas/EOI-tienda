@@ -1,6 +1,4 @@
 import { Component, OnInit} from '@angular/core';
-
-
 import { Item } from '../../entities/item.model';
 import { ItemListService } from './item-list.service';
 

@@ -31,5 +31,10 @@ export class ItemListService {
     const url = `${this.URL_BASE}/${item.id}`;
     return this.http.delete(url);
   }
+
+  createItem(item:Item){
+    const url = `${this.URL_BASE}/${item.id}`;
+    return this.http.post(url, item, httpOptions);
+  }
  
 }
