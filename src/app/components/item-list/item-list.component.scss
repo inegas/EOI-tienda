@@ -1,5 +1,6 @@
- ul {
 
+
+ ul {
    float: left;
    display: flex;
    flex-direction: row;
@@ -9,6 +10,19 @@
    position: relative;
    left: 4vw;
  }
+  //Siempre debajo, si no hereda y no se aplican los estilos
+ @media screen and (max-width: 1366px) {
+   ul {
+   float: left;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   /* border: 1px solid blue; */
+   width: 20vw;
+   position: relative;
+   left: 2vw;
+ }
+}
 
  .card {
    /* border: 1px solid red; */

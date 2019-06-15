@@ -3,7 +3,7 @@
 <form [hidden]="hidden">
   Description:<br>
   <input type="text" [(ngModel)]="addDescription" name="addDescription">
-  <p>{{addDescription}}</p>
+ <!--  <p>{{addDescription}}</p> -->
   <br>
   Stock:<br>
   <input type="number" name="addStock" value="Stock">
@@ -14,6 +14,6 @@
   Image:<br>
   <input type="text" name="addImage">
   <br>
-  <button (click)="newItem(item)">Create</button>
-  <button (click)="noShowAdd()">Cancel</button>
+  <button class="btn" id="btnCreate" (click)="newItem(item)">Create</button>
+  <button class="btn" (click)="noShowAdd()">Cancel</button>
 </form> 

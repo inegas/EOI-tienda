@@ -25,18 +25,6 @@
       "stockaux": 20
     },
     {
-      "id": 4,
-      "name": "name",
-      "description": "name description",
-      "stock": 20,
-      "price": 39.99,
-      "image": "assets/sirio3.jpg",
-      "selected": false,
-      "quantity": 0,
-      "editable": false,
-      "stockaux": 20
-    },
-    {
       "id": 5,
       "name": "name",
       "description": "name description",
