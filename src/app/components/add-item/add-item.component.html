@@ -1,5 +1,6 @@
 <!-- Aqui va el formulario de creacion del nuevo item -->
-<form>
+<button type="text" (click)="showAdd()">Add</button>
+<form [hidden]="hidden">
   Description:<br>
   <input type="text" name="Description">
   <br>
@@ -13,5 +14,5 @@
   <input type="text" name="Image">
   <br>
   <button>Crear</button>
-  <button>Cancelar</button>
+  <button (click)="noShowAdd()">Cancelar</button>
 </form> 
