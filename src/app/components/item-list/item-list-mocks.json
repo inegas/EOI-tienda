@@ -2,7 +2,6 @@
   "item-list": [
     {
       "id": 2,
-      "name": "name",
       "description": "Reloj",
       "stock": 20,
       "price": 4.99,
@@ -14,7 +13,6 @@
     },
     {
       "id": 3,
-      "name": "name",
       "description": "Hola cocacola",
       "stock": 20,
       "price": 29.99,
@@ -26,7 +24,6 @@
     },
     {
       "id": 4,
-      "name": "name",
       "description": "name description",
       "stock": 20,
       "price": 39.99,
@@ -38,7 +35,6 @@
     },
     {
       "id": 5,
-      "name": "name",
       "description": "name description",
       "stock": 20,
       "price": 49.99,
@@ -50,7 +46,6 @@
     },
     {
       "id": 6,
-      "name": "name",
       "description": "name description",
       "stock": 20,
       "price": 59.99,
@@ -62,7 +57,6 @@
     },
     {
       "id": 7,
-      "name": "name",
       "description": "name description",
       "stock": 20,
       "price": 69.99,
@@ -74,7 +68,6 @@
     },
     {
       "id": 8,
-      "name": "name",
       "description": "name description",
       "stock": 20,
       "price": 79.99,
