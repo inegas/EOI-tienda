@@ -35,7 +35,7 @@ export class ItemListComponent implements OnInit {
         error => console.log(error),
         () => console.log('list load')
       );
-  }
+  };
 
  /*  totalItem() {
     let result2:number;
@@ -63,29 +63,25 @@ export class ItemListComponent implements OnInit {
   modelChanged(item: Item) {
     if (item.stock > 0) {
       item.stock -= item.quantity;
-    } /* else if (item.quantity === null) {
-       item.stockaux;
-    } *//* else if(item.quantity < 0 ){
-      item.stockaux;
-    } */
-  }
+    };
+  };
 
   updateItem(item:Item){
     this.itemListService.updateItem(item).subscribe();
-  }
+  };
 
   deleteItem(item:Item){
     this.itemListService.deleteItem(item).subscribe(
       () => this.getItemList()
     );
-  }
+  };
 
   isEditable(item:Item){
   item.editable = !item.editable;
- }
+ };
 
  isNotEditable(item:Item){
       item.editable = false;
- }
+ };
 
 };
