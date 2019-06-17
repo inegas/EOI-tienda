@@ -12,6 +12,7 @@ export class AddItemComponent implements OnInit {
 
   //Me traigo la estructura del Item
   item:Item;
+  
   hidden:boolean = true;
 
   //Atributos para añadir

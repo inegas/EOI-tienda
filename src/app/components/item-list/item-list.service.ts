@@ -27,9 +27,9 @@ export class ItemListService {
     return this.http.put<Item>(url, item, httpOptions);
   };
 
-  deleteItem(item:Item){
-    const url = `${this.URL_BASE}/${item.id}`;
-    return this.http.delete(url);
+  deleteItem(id:number){
+    const url = `${this.URL_BASE}/${id}`;
+    return this.http.delete<Item>(url);
   }
 
   createItem(item:Item){

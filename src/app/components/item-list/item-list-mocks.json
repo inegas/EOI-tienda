@@ -15,7 +15,7 @@
     {
       "id": 3,
       "name": "name",
-      "description": "Hola cocacola",
+      "description": "Donetus",
       "stock": 20,
       "price": 29.99,
       "image": "assets/sirio.jpg",
@@ -27,12 +27,12 @@
     {
       "id": 5,
       "name": "name",
-      "description": "name description",
+      "description": "yolamos",
       "stock": 20,
       "price": 49.99,
       "image": "assets/sirio3.jpg",
       "selected": false,
-      "quantity": 0,
+      "quantity": null,
       "editable": false,
       "stockaux": 20
     },
@@ -50,24 +50,13 @@
     },
     {
       "id": 7,
-      "name": "name",
-      "description": "name description",
-      "stock": 20,
-      "price": 69.99,
-      "image": "assets/sirio3.jpg",
-      "selected": false,
-      "quantity": 0,
-      "editable": false,
-      "stockaux": 20
-    },
-    {
-      "id": 8,
       "image": "assets/sirio3.jpg",
       "quantity": null,
-      "description": "hola2",
+      "description": "holo newversion",
       "stockaux": 23,
       "stock": 23,
-      "price": 52
+      "price": 52.99,
+      "editable": false
     }
   ]
 }
