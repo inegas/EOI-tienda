@@ -2,18 +2,17 @@
 <button type="text" (click)="showAdd()">Add</button>
 <form [hidden]="hidden">
   Description:<br>
-  <input type="text" [(ngModel)]="addDescription" name="addDescription">
- <!--  <p>{{addDescription}}</p> -->
+  <input type="text" [(ngModel)]="item.description" name="addDescription">
   <br>
   Stock:<br>
-  <input type="number" name="addStock" value="Stock">
+  <input type="number" [(ngModel)]="item.stockaux" [(ngModel)]="item.stock" name="addStock" value="Stock">
   <br>
   Price:<br>
-  <input type="number" name="addPrice" value="Price">
+  <input type="number" [(ngModel)]="item.price" name="addPrice" value="Price">
   <br>
   Image:<br>
-  <input type="text" name="addImage">
+  <input type="text" [(ngModel)]="item.image" name="addImage">
   <br>
-  <button class="btn" id="btnCreate" (click)="newItem(item)">Create</button>
+  <button class="btn" id="btnCreate" (click)="newItem()">Create</button>
   <button class="btn" (click)="noShowAdd()">Cancel</button>
 </form> 

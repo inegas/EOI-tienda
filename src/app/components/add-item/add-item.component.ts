@@ -10,21 +10,21 @@ import { ItemListService } from '../item-list/item-list.service';
 })
 export class AddItemComponent implements OnInit {
 
-  //Me traigo la estructura del Item[]
-  items:Item[];
+  //Me traigo la estructura del Item
+  item:Item;
   hidden:boolean = true;
 
   //Atributos para añadir
-  addId:number = null;
-  addDescription:string;
-  addStock:number;
-  addPrice:number;
-  addImage:string;
+  urlImg:string = 'assets/';
 
 
   constructor(private itemListService:ItemListService) { }
 
   ngOnInit() {
+    this.item = new Item();
+    this.item.id = null;
+    this.item.image = `${this.urlImg}`;
+    this.item.quantity = null;
   }
 
   showAdd(){
@@ -35,13 +35,7 @@ export class AddItemComponent implements OnInit {
     this.hidden = true;
   };
 
-  newItem(item:Item){
-    this.itemListService.createItem(item).subscribe(
-      () =>{
-        item.description = this.addDescription;
-      }
-      
-      
-    )
+  newItem(){
+    this.itemListService.createItem(this.item).subscribe()
   };
 };

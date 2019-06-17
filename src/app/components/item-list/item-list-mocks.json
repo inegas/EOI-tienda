@@ -59,6 +59,15 @@
       "quantity": 0,
       "editable": false,
       "stockaux": 20
+    },
+    {
+      "id": 8,
+      "image": "assets/sirio3.jpg",
+      "quantity": null,
+      "description": "hola2",
+      "stockaux": 23,
+      "stock": 23,
+      "price": 52
     }
   ]
 }
