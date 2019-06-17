@@ -3,5 +3,7 @@
 </section>
 
 <ul *ngFor="let item of items">
-  <app-item [item]="item" (delete)="deleteItem($event)"></app-item>
+  <app-item [item]="item" 
+  (delete)="deleteItem($event)"
+  (update)=" updateItem($event)"></app-item>
 </ul>

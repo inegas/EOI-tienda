@@ -11,10 +11,11 @@ export class ItemComponent implements OnInit {
   is_edit : boolean = false;
   @Input() item:Item;
   @Output() delete:EventEmitter<number> = new EventEmitter<number>();
+  @Output() update:EventEmitter<Item> = new EventEmitter<Item>();
 
 
 /* Aqui va el outPut() y eventEmmiter */
-  constructor(private itemListService: ItemListService) { }
+  constructor() { }
 
   ngOnInit() {
   }
@@ -42,7 +43,7 @@ export class ItemComponent implements OnInit {
 
   //Output()
   updateItem(item:Item){
-    this.itemListService.updateItem(item).subscribe();
+    this.update.emit(item);
   };
 
   //Output()
