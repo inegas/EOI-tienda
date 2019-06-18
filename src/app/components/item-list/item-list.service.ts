@@ -22,6 +22,11 @@ export class ItemListService {
     return this.http.get('http://localhost:3000/item-list');
   };
 
+  getItem(id:number){
+    const url = `${this.URL_BASE}/${id}`;
+    return this.http.get(url);
+  }
+
   updateItem(item:Item){
     const url = `${this.URL_BASE}/${item.id}`;
     return this.http.put<Item>(url, item, httpOptions);
@@ -35,6 +40,12 @@ export class ItemListService {
   createItem(item:Item){
     const url = `${this.URL_BASE}/`;
     return this.http.post<Item>(url, item, httpOptions);
+  }
+
+
+  updateTotalItem(item:Item){
+     const url = `${this.URL_BASE}/${item.id}`;
+     return this.http.put<Item>(url, item, httpOptions);
   }
  
 }

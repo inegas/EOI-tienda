@@ -1,3 +1,16 @@
-<p>
-  edit-item works!
-</p>
+<form [hidden]="hidden">
+  Description:<br>
+  <input type="text" [(ngModel)]="item.description" name="addDescription">
+  <br>
+  Stock:<br>
+  <input type="number" [(ngModel)]="item.stockaux" [(ngModel)]="item.stock" name="addStock" value="Stock">
+  <br>
+  Price:<br>
+  <input type="number" [(ngModel)]="item.price" name="addPrice" value="Price">
+  <br>
+  Image:<br>
+  <input type="text" [(ngModel)]="item.image" name="addImage">
+  <br>
+  <button class="btn" id="btnCreate" (click)="updateItem(item)">Save</button>
+  <button class="btn" [routerLink]="[ '/home']">Back</button>
+</form>

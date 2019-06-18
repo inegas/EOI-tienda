@@ -1,0 +1,56 @@
+form {
+    border: 1px solid black;
+  top: -2vw;
+  background-color: whitesmoke;
+  position: relative;
+  width: 25vw;
+  left: 32vw;
+  border-radius: 3px;
+  padding-left: 5vw;
+  padding-top: 2vw;
+}
+
+input[type=text] {
+  text-align: center;
+  width: 20vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=number] {
+  text-align: center;
+  width: 20vw;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  border: 1px solid black;
+  /* border: none; */
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 10vw;
+  font-size: 18px;
+  border-radius: 3px;
+}
+
+.btn {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+#btnCreate {
+  margin-right: 0.5em;
+}
