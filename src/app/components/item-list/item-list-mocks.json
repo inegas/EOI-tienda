@@ -27,7 +27,7 @@
     {
       "id": 5,
       "name": "name",
-      "description": "yolamos",
+      "description": "full de mango",
       "stock": 20,
       "price": 49.99,
       "image": "assets/sirio3.jpg",
@@ -57,6 +57,15 @@
       "stock": 23,
       "price": 52.99,
       "editable": false
+    },
+    {
+      "id": 8,
+      "image": "assets/sirio.jpg",
+      "quantity": null,
+      "description": "Prim",
+      "stockaux": 50,
+      "stock": 50,
+      "price": 99.99
     }
   ]
 }
