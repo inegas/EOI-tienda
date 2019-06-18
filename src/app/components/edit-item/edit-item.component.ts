@@ -36,8 +36,10 @@ item:Item;
   };
 
   updateItem(item:Item){
-    this.itemListService.updateTotalItem(item).subscribe();
-    this.route.navigateByUrl('/home');
+    this.itemListService.updateTotalItem(item).subscribe(
+      () => this.route.navigateByUrl('/home')
+    );
+    
   };
 }
 
