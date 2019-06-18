@@ -1,5 +1,7 @@
 <li class="card">
-  <button (click)="deleteItem(item)">X</button>
+  <button class="btne">Edit</button>
+  <button class="btne btnx" (click)="deleteItem(item)">X</button>
+  
   <img [src]="item.image" alt="No encontrada">
 
   <p *ngIf="!item.editable" (click)="isEditable(item)">{{item.description}}</p>
