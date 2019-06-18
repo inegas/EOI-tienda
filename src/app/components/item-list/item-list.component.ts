@@ -1,6 +1,8 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit,} from '@angular/core';
 import { Item } from '../../entities/item.model';
 import { ItemListService } from './item-list.service';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-item-list',
@@ -13,7 +15,8 @@ export class ItemListComponent implements OnInit {
   items: Item[];
 
   constructor(
-    private itemListService: ItemListService
+    private itemListService: ItemListService,
+    private router:Router
   ) { }
 
   ngOnInit() {
@@ -43,4 +46,8 @@ export class ItemListComponent implements OnInit {
       () => this.getItemList()
     )
   };
+
+  editItem(id:number){
+    this.router.navigateByUrl('/item/' + id);
+  }
 };

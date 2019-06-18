@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { Item } from '../../entities/item.model';
-import { ItemListService } from '../item-list/item-list.service';
 
 @Component({
   selector: 'app-item',
@@ -12,6 +11,7 @@ export class ItemComponent implements OnInit {
   @Input() item:Item;
   @Output() delete:EventEmitter<number> = new EventEmitter<number>();
   @Output() update:EventEmitter<Item> = new EventEmitter<Item>();
+  @Output() edit:EventEmitter<number> = new EventEmitter<number>();
 
 
 /* Aqui va el outPut() y eventEmmiter */
@@ -50,6 +50,11 @@ export class ItemComponent implements OnInit {
   deleteItem():void{
     this.delete.emit(this.item.id);
   };
+
+  //Output()
+  editItem(){
+    this.edit.emit(this.item.id);
+  }
 
   isEditable(item:Item){
   item.editable = !item.editable;
