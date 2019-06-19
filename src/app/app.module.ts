@@ -19,6 +19,8 @@ import { AddItemComponent } from './components/add-item/add-item.component';
 import { EditItemComponent } from './components/edit-item/edit-item.component';
 import { NotItemComponent } from './components/not-item/not-item.component';
 import { CartComponent } from './components/cart/cart.component';
+import { FormCartComponent } from './components/form-cart/form-cart.component';
+import { OrderComponent } from './components/order/order.component';
 
 
 
@@ -32,7 +34,9 @@ import { CartComponent } from './components/cart/cart.component';
     AddItemComponent,
     EditItemComponent,
     NotItemComponent,
-    CartComponent
+    CartComponent,
+    FormCartComponent,
+    OrderComponent
   ],
   imports: [
     BrowserModule,
