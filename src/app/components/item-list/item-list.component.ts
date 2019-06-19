@@ -1,7 +1,9 @@
-import { Component, OnInit,} from '@angular/core';
+import { Component, OnInit, Input,} from '@angular/core';
 import { Item } from '../../entities/item.model';
 import { ItemListService } from './item-list.service';
 import { Router } from '@angular/router';
+import { CartService } from '../order/cart.service';
+import { CartItem } from 'src/app/entities/cart.model';
 
 
 @Component({
@@ -13,10 +15,14 @@ import { Router } from '@angular/router';
 export class ItemListComponent implements OnInit {
   title = 'Full Stack';
   items: Item[];
+  totalItems:number = 0;
+
+  @Input() cart:CartItem;
 
   constructor(
     private itemListService: ItemListService,
-    private router:Router
+    private router:Router,
+    private cartService: CartService
   ) { }
 
   ngOnInit() {
@@ -49,5 +55,10 @@ export class ItemListComponent implements OnInit {
 
   editItem(id:number){
     this.router.navigateByUrl('/item/' + id);
-  }
+  };
+
+  addCart(item:CartItem, onlyItem:Item){
+    this.cartService.addItem(item);
+    this.totalItems += onlyItem.quantity;
+  };
 };

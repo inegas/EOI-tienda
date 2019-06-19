@@ -1,13 +1,14 @@
 <section style="text-align:center">
 
 <app-add-item></app-add-item>
-<img src="../../../assets/9240.png" alt="">
-
+<img [routerLink]="[ '/order' ]" src="../../../assets/9240.png" alt="">
+<p>{{totalItems}}</p>
 </section>
 
 <ul *ngFor="let item of items">
   <app-item [item]="item" 
   (delete)="deleteItem($event)"
   (update)=" updateItem($event)"
-  (edit)="editItem($event)"></app-item>
+  (edit)="editItem($event)"
+  (add)="addCart($event, item)"></app-item>
 </ul>

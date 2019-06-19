@@ -12,6 +12,7 @@ export class ItemComponent implements OnInit {
   @Output() delete:EventEmitter<number> = new EventEmitter<number>();
   @Output() update:EventEmitter<Item> = new EventEmitter<Item>();
   @Output() edit:EventEmitter<number> = new EventEmitter<number>();
+  @Output() add:EventEmitter<Item> = new EventEmitter<Item>();
 
 
 /* Aqui va el outPut() y eventEmmiter */
@@ -63,5 +64,10 @@ export class ItemComponent implements OnInit {
  isNotEditable(item:Item){
       item.editable = false;
  };
+
+  //Output()
+ addToCart(item:Item){
+   this.add.emit(item);
+ }
 
 }
