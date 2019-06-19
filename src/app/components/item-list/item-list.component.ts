@@ -58,6 +58,7 @@ export class ItemListComponent implements OnInit {
   };
 
   addCart(item:CartItem, onlyItem:Item){
+    //Revisar esta funcionalidad bug añadir al carro cuando el value es 0 o null
     this.cartService.addItem(item);
     this.totalItems += onlyItem.quantity;
   };
