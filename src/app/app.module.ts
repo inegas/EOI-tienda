@@ -1,6 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+//Forms
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+
+
 import { HttpClientModule } from '@angular/common/http';
 
 //Routes
@@ -43,7 +48,8 @@ import { OrderComponent } from './components/order/order.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    routing
+    routing,
+    ReactiveFormsModule
   ],
   providers: [ItemListService],
   bootstrap: [AppComponent]
