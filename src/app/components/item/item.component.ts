@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, Input, EventEmitter } from '@angular/core';
 import { Item } from '../../entities/item.model';
+import { CartItem } from 'src/app/entities/cart.model';
 
 @Component({
   selector: 'app-item',
@@ -12,7 +13,7 @@ export class ItemComponent implements OnInit {
   @Output() delete:EventEmitter<number> = new EventEmitter<number>();
   @Output() update:EventEmitter<Item> = new EventEmitter<Item>();
   @Output() edit:EventEmitter<number> = new EventEmitter<number>();
-  @Output() add:EventEmitter<Item> = new EventEmitter<Item>();
+  @Output() add:EventEmitter<CartItem> = new EventEmitter<CartItem>();
 
 
 /* Aqui va el outPut() y eventEmmiter */
@@ -67,7 +68,7 @@ export class ItemComponent implements OnInit {
 
   //Output()
  addToCart(item:Item){
-   this.add.emit(item);
+   this.add.emit(new CartItem(item));
  }
 
 }

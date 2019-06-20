@@ -15,7 +15,7 @@ export class OrderComponent implements OnInit {
   ngOnInit() {
 
     this.cart = this.cartService.cart;
-    
+    console.log(this.cart);
   }
 
 }

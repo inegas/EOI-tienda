@@ -8,11 +8,10 @@ import { Item } from 'src/app/entities/item.model';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  total:number = 1;
-  total2:number = 2;
   
 
-  @Input() cart:CartItem;
+  @Input() cart:CartItem[];
+  
 
 
   constructor() { }
@@ -21,7 +20,19 @@ export class CartComponent implements OnInit {
   }
   //Aqui me quedé
   totalPrice(){
-    
+    return this.cart.reduce( 
+      (acumulator, cartItem) => (cartItem.item.quantity * cartItem.item.price) + acumulator
+    , 0);
+
+
+
+
+    // reduce
+    // for (const iterator of this.cart) {
+    //   console.log(iterator);
+      
+    //   return iterator.item.price * iterator.item.quantity;
+    // }
   }
   
 
